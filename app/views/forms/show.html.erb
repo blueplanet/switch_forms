@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @form.title %>
+</p>
+
+
+<%= link_to t('helpers.link.edit'), edit_form_path(@form), class: "btn btn-default" %>
+<%= link_to t('helpers.link.back'), forms_path, class: "btn btn-default" %>
+
+<hr>
+
+<%= raw @form.html %>

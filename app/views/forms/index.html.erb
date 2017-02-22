@@ -1,0 +1,29 @@
+<h1>Forms</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Html</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%= form.title %></td>
+        <td><%= form.html %></td>
+        <td>
+          <%= link_to t('helpers.link.show'), form, class: "btn btn-default" %>
+          <%= link_to t('helpers.link.edit'), edit_form_path(form), class: "btn btn-default" %>
+          <%= link_to t('helpers.link.destroy'), form, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('helpers.link.new'), new_form_path, class: "btn btn-default" %>
