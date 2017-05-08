@@ -1,6 +1,4 @@
 $ ->
   $('.btn').mouseover ->
-    id = $(@).id()
-    value = $(@).val()
 
-    window.san('send', 'event', 'btn', 'mouseover', id, value)
+    window.san('send', 'event', 'btn', 'mouseover', $(@).attributes)
