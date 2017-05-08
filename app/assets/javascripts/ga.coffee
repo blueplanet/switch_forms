@@ -1,6 +1,6 @@
 $ ->
   $('.btn').mouseover ->
-    id = $(@).attr('id')
+    id = $(@).id()
     value = $(@).val()
 
-    window.ga('send', 'event', 'btn', 'mouseover', id, value)
+    window.san('send', 'event', 'btn', 'mouseover', id, value)
