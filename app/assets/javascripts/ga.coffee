@@ -1,4 +1,5 @@
 $ ->
   $('.btn').mouseover ->
 
-    window.san('send', 'event', 'btn', 'mouseover', $(@).attributes)
+    # window.san('send', 'event', 'btn', 'mouseover', $(@).attributes)
+    analytics.track('mouseover')
