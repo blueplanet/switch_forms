@@ -29,8 +29,8 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to 'localhost:3000' %></li>
-          <li><%= link_to 'https://switch.dptr.jp' %></li>
+          <li><%= link_to 'localhost:3000', 'localhost:3000' %></li>
+          <li><%= link_to 'https://switch.dptr.jp', 'https://switch.dptr.jp' %></li>
           <%# user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド %>
           <% if user_signed_in? %>
             <%# current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド %>
